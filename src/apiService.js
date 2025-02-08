@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const gitlabToken = 'glpat-b9aXHSkADzp2Ay45KRcy'; // Thay bằng token của bạn
 const apiClient = axios.create({
-    baseURL: 'http://gitlab.taphoaictu.id.vn:8929/api/v4',
+    baseURL: 'https://gitlab.taphoaictu.id.vn/api/v4',
     headers: { Authorization: `Bearer ${gitlabToken}` },
 });
 

@@ -13,9 +13,8 @@
             </div>
         </template>
         <template #footer>
-            <Button :disabled="project.pipelines.status === 'running'"
-                :label="project.pipelines.status === 'running' || project.pipelines.status === 'pending' ? 'Đang chạy pipeline' : 'Kích hoạt Pipeline'"
-                severity="success" @click="triggerPipeline" />
+            <Button :disabled="project.pipelines.status === 'running' || project.pipelines.status === 'pending'"
+                :label="getText(project.pipelines.status)" severity="success" @click="triggerPipeline" />
         </template>
     </Card>
 </template>

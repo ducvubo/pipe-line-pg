@@ -5,7 +5,7 @@ export const usePipelineStore = defineStore('pipeline', {
     state: () => ({
         projects: [{
             id: 1,
-            pipelineToken: 'glptt-067cb6ca638547544433e8c01ea422cfc644c69d',
+            pipelineToken: 'glptt-057e04d69e3f25d6fa4fa1872e63a351d92c5c64',
             name: "Back_PG",
             pipelines: {
                 id: '',
@@ -14,22 +14,21 @@ export const usePipelineStore = defineStore('pipeline', {
         },
         {
             id: 2,
-            pipelineToken: 'glptt-3137e9903220edb496eaa26fc08e2b93ca927eee',
-            name: "Inventory_pg",
+            pipelineToken: 'glptt-4b9cdb2e041e3a3d6d55ad3c9398d65331497ba9',
+            name:"Inventory_PG",
             pipelines: {
                 id: '',
                 status: ''
             }
-        },
-        {
+        },{
             id: 3,
-            pipelineToken: 'glptt-9b2bf803a010e573c2d73913bdbe3a2b534019dc',
-            name: "Order_pg",
+            pipelineToken: 'glptt-f930794daa44ad53231b68444b1b138a8b692bf9',
+            name:"Order_PG",
             pipelines: {
                 id: '',
                 status: ''
             }
-        },
+        }
     ],
     }),
 

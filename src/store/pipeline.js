@@ -28,6 +28,15 @@ export const usePipelineStore = defineStore('pipeline', {
                 id: '',
                 status: ''
             }
+        },
+        {
+            id: 4,
+            pipelineToken: 'glptt-8ee11b937166a340ffa338b42ab7b442bb2f3b43',
+            name: "Next CMS",
+            pipelines: {
+                id: '',
+                status: ''
+            }
         }
     ],
     }),

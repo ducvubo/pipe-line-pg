@@ -3,32 +3,7 @@ import { activatePipeline, getPipelineStatus,generateTag } from '../apiService';
 
 export const usePipelineStore = defineStore('pipeline', {
     state: () => ({
-        projects: [{
-            id: 4,
-            pipelineToken: 'glptt-057e04d69e3f25d6fa4fa1872e63a351d92c5c64',
-            name: "Back_PG",
-            pipelines: {
-                id: '',
-                status: ''
-            }
-        },
-        {
-            id: 2,
-            pipelineToken: 'glptt-4b9cdb2e041e3a3d6d55ad3c9398d65331497ba9',
-            name:"Inventory_PG",
-            pipelines: {
-                id: '',
-                status: ''
-            }
-        },{
-            id: 3,
-            pipelineToken: 'glptt-f930794daa44ad53231b68444b1b138a8b692bf9',
-            name:"Order_PG",
-            pipelines: {
-                id: '',
-                status: ''
-            }
-        },
+        projects: [
         {
             id: 1,
             pipelineToken: 'glptt-8bd68afb8719d1c1791d57d7352fbcb2ada7c0da',

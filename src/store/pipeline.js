@@ -4,7 +4,7 @@ import { activatePipeline, getPipelineStatus,generateTag } from '../apiService';
 export const usePipelineStore = defineStore('pipeline', {
     state: () => ({
         projects: [{
-            id: 1,
+            id: 4,
             pipelineToken: 'glptt-057e04d69e3f25d6fa4fa1872e63a351d92c5c64',
             name: "Back_PG",
             pipelines: {
@@ -30,8 +30,8 @@ export const usePipelineStore = defineStore('pipeline', {
             }
         },
         {
-            id: 4,
-            pipelineToken: 'glptt-8ee11b937166a340ffa338b42ab7b442bb2f3b43',
+            id: 1,
+            pipelineToken: 'glptt-8bd68afb8719d1c1791d57d7352fbcb2ada7c0da',
             name: "Next CMS",
             pipelines: {
                 id: '',

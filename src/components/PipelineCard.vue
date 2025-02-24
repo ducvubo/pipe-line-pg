@@ -13,7 +13,7 @@
             </div>
         </template>
         <template #footer>
-            <Button :disabled="project.pipelines.status === 'running' || project.pipelines.status === 'pending' || project.pipelines.status === 'created'"
+            <Button :disabled="project.pipelines.status === 'running' || project.pipelines.status === 'created'"
                 :label="getText(project.pipelines.status)" severity="success" @click="triggerPipeline" />
         </template>
     </Card>

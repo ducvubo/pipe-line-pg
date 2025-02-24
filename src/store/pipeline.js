@@ -6,8 +6,53 @@ export const usePipelineStore = defineStore('pipeline', {
         projects: [
         {
             id: 1,
-            pipelineToken: 'glptt-8bd68afb8719d1c1791d57d7352fbcb2ada7c0da',
-            name: "Next CMS",
+            pipelineToken: 'glptt-1d03de5d9d16a9bd8eac27403028a54e3795df7c',
+            name: "Back PG",
+            pipelines: {
+                id: '',
+                status: ''
+            }
+        },
+        {
+            id: 2,
+            pipelineToken: 'glptt-eff15efcbe31911eaa8197630f7786c627c298dd',
+            name: "Inventory PG",
+            pipelines: {
+                id: '',
+                status: ''
+            }
+        },
+        {
+            id: 3,
+            pipelineToken: 'glptt-29ca0bf9c9463c91a3ef60e40bcb7bf94fd855c5',
+            name: "Order PG",
+            pipelines: {
+                id: '',
+                status: ''
+            }
+        },
+        {
+            id: 4,
+            pipelineToken: 'glptt-82e10d310a0e07a808b89006019b9a5ad860d48e',
+            name: "Employee PG",
+            pipelines: {
+                id: '',
+                status: ''
+            }
+        },
+        {
+            id: 5,
+            pipelineToken: 'glptt-c18a72821f23df673f64c082c3ca18de0bcd5fec',
+            name: "Blog PG",
+            pipelines: {
+                id: '',
+                status: ''
+            }
+        },
+        {
+            id: 6,
+            pipelineToken: 'glptt-32961bfc4730e0d20846cb66b27647b245dc05d6',
+            name: "System Management PG",
             pipelines: {
                 id: '',
                 status: ''

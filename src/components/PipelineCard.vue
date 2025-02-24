@@ -61,7 +61,7 @@ const getText = (status) => {
         case 'failed':
             return 'Lỗi chạy pipeline'
         default:
-            return status
+            return "Không xác định"
     }
 }
 </script>

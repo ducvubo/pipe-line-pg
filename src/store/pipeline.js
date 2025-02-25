@@ -61,7 +61,7 @@ export const usePipelineStore = defineStore('pipeline', {
         {
             id: 7,
             pipelineToken: 'glptt-564553d5bdee3c8e3b3f29c5553efff797bdca52',
-            name: "System Management PG",
+            name: "Restaurant PG",
             pipelines: {
                 id: '',
                 status: ''

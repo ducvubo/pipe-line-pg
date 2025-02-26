@@ -131,6 +131,8 @@ const getTextGitHub = (status) => {
                 <div class="flex items-center gap-5">
                     <a :href="project.linkGithub" target="_blank" class="text-blue-500">Github Repo</a>
                     <a :href="project.linkGitlab" target="_blank" class="text-blue-500">Gitlab Repo</a>
+                    <a :href="project.linkApp" target="_blank" class="text-blue-500">App</a>
+
                 </div>
             </div>
         </template>

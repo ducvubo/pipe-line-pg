@@ -23,6 +23,7 @@ export const usePipelineStore = defineStore("pipeline", {
         },
         linkGithub: "https://github.com/ducvubo/bk-pg",
         linkGitlab: "https://gitlab.taphoaictu.id.vn/vuducbo/back_pg",
+        linkApp: "https://back.pg.taphoaictu.id.vn/swagger",
       },
       {
         id: 2,
@@ -35,8 +36,10 @@ export const usePipelineStore = defineStore("pipeline", {
         gitHubRepo: {
           name: "inventory_pg",
           status: "",
-        },   linkGithub: "https://github.com/ducvubo/inventory_pg",
+        },
+        linkGithub: "https://github.com/ducvubo/inventory_pg",
         linkGitlab: "https://gitlab.taphoaictu.id.vn/vuducbo/inventory_pg",
+        linkApp: "https://inventory.pg.taphoaictu.id.vn/swagger",
       },
       {
         id: 3,
@@ -49,8 +52,10 @@ export const usePipelineStore = defineStore("pipeline", {
         gitHubRepo: {
           name: "order-pg",
           status: "",
-        },   linkGithub: "https://github.com/ducvubo/order-pg",
+        },
+        linkGithub: "https://github.com/ducvubo/order-pg",
         linkGitlab: "https://gitlab.taphoaictu.id.vn/vuducbo/order_pg",
+        linkApp: "https://order.pg.taphoaictu.id.vn/swagger",
       },
       {
         id: 4,
@@ -63,8 +68,10 @@ export const usePipelineStore = defineStore("pipeline", {
         gitHubRepo: {
           name: "employee-pg",
           status: "",
-        },   linkGithub: "https://github.com/ducvubo/employee-pg",
+        },
+        linkGithub: "https://github.com/ducvubo/employee-pg",
         linkGitlab: "https://gitlab.taphoaictu.id.vn/vuducbo/employee_pg",
+        linkApp: "https://employee.pg.taphoaictu.id.vn",
       },
       {
         id: 5,
@@ -77,8 +84,10 @@ export const usePipelineStore = defineStore("pipeline", {
         gitHubRepo: {
           name: "blog-pg",
           status: "",
-        },   linkGithub: "https://github.com/ducvubo/blog-pg",
+        },
+        linkGithub: "https://github.com/ducvubo/blog-pg",
         linkGitlab: "https://gitlab.taphoaictu.id.vn/vuducbo/blog_pg",
+        linkApp: "https://blog.pg.taphoaictu.id.vn/swagger",
       },
       {
         id: 6,
@@ -91,8 +100,12 @@ export const usePipelineStore = defineStore("pipeline", {
         gitHubRepo: {
           name: "system-management-pg",
           status: "",
-        },   linkGithub: "https://github.com/ducvubo/system-management-pg",
-        linkGitlab: "https://gitlab.taphoaictu.id.vn/vuducbo/system_management_pg",
+        },
+        linkGithub: "https://github.com/ducvubo/system-management-pg",
+        linkGitlab:
+          "https://gitlab.taphoaictu.id.vn/vuducbo/system_management_pg",
+        linkApp:
+          "https://system.management.pg.taphoaictu.id.vn/swagger/index.html",
       },
       {
         id: 7,
@@ -105,23 +118,31 @@ export const usePipelineStore = defineStore("pipeline", {
         gitHubRepo: {
           name: "restaurant-pg",
           status: "",
-        },   linkGithub: "https://github.com/ducvubo/restaurant-pg",
+        },
+        linkGithub: "https://github.com/ducvubo/restaurant-pg",
         linkGitlab: "https://gitlab.taphoaictu.id.vn/vuducbo/restaurant_pg",
+        linkApp: "https://restaurant.pg.taphoaictu.id.vn",
       },
     ],
   }),
 
   actions: {
-    async triggerPipeline(projectId, branch, pipelineToken,nameRepo) {
+    async triggerPipeline(projectId, branch, pipelineToken, nameRepo) {
       const pipeline = await generateTag("1.0.0", projectId, branch);
-      this.fetchPipelineStatus(projectId, pipeline.id,nameRepo);
+      this.fetchPipelineStatus(projectId, pipeline.id, nameRepo);
       localStorage.setItem(projectId, pipeline.id);
     },
 
     async fetchPipelineStatus(projectId, pipelineId, nameRepo) {
       const status = await getPipelineStatus(projectId, pipelineId);
       const statusGithub = await getLatestGithubAction(nameRepo);
-      this.updatePipelineStatus(projectId,status.id, status.status,statusGithub,nameRepo);
+      this.updatePipelineStatus(
+        projectId,
+        status.id,
+        status.status,
+        statusGithub,
+        nameRepo
+      );
     },
 
     addPipeline(projectId, pipeline) {
@@ -129,7 +150,13 @@ export const usePipelineStore = defineStore("pipeline", {
       project.pipelines.push(pipeline);
     },
 
-    updatePipelineStatus(projectId, pipelineId, status, statusGitHub = "test", nameRepo) {
+    updatePipelineStatus(
+      projectId,
+      pipelineId,
+      status,
+      statusGitHub = "test",
+      nameRepo
+    ) {
       const project = this.projects.find((p) => p.id === projectId);
       project.pipelines.id = pipelineId;
       project.pipelines.status = status;

@@ -112,9 +112,9 @@ export const usePipelineStore = defineStore("pipeline", {
   }),
 
   actions: {
-    async triggerPipeline(projectId, branch, pipelineToken) {
+    async triggerPipeline(projectId, branch, pipelineToken,nameRepo) {
       const pipeline = await generateTag("1.0.0", projectId, branch);
-      this.fetchPipelineStatus(projectId, pipeline.id);
+      this.fetchPipelineStatus(projectId, pipeline.id,nameRepo);
       localStorage.setItem(projectId, pipeline.id);
     },
 

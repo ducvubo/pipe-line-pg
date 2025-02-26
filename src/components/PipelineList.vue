@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-cols-1 md:grid-cols-4 gap-4 p-4">
     <PipelineCard v-for="project in projects" :key="project.id" :project="project"
-      @trigger="triggerPipeline(project.id, 'main', project.pipelineToken)" />
+      @trigger="triggerPipeline(project.id, 'main', project.pipelineToken, project.gitHubRepo.name)" />
   </div>
 </template>
 
@@ -13,8 +13,8 @@ import PipelineCard from "./PipelineCard.vue";
 const store = usePipelineStore();
 const projects = store.projects;
 
-const triggerPipeline = (projectId, branch, pipelineToken) => {
-  store.triggerPipeline(projectId, branch, pipelineToken);
+const triggerPipeline = (projectId, branch, pipelineToken, nameRepo) => {
+  store.triggerPipeline(projectId, branch, pipelineToken, nameRepo);
 };
 
 onMounted(() => {
@@ -25,7 +25,6 @@ onMounted(() => {
       project.id,
       project.pipelines.id,
       project.gitHubRepo.name,
-      project.gitHubRepo.name
     );
   });
 

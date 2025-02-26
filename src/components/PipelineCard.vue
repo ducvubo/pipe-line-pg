@@ -6,9 +6,19 @@
             <div class="flex flex-col items-start gap-2 my-2">
                 <div>Pipeline: #{{ project.pipelines.id }}</div>
                 <div class="flex items-center gap-2">
-                    <span>Trạng thái:</span>
+                    <span>Trạng thái pipeline:</span>
                     <Tag :severity="getSeverity(project.pipelines.status)" :value="getText(project.pipelines.status)">
                     </Tag>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span>Trạng thái push: </span>
+                    <Tag :severity="getSeverityGitHub(project.gitHubRepo.status)"
+                        :value="getTextGitHub(project.pipelines.status)">
+                    </Tag>
+                </div>
+                <div class="flex items-center gap-5">
+                    <a :href="project.linkGithub" target="_blank" class="text-blue-500">Github Repo</a>
+                    <a :href="project.linkGitlab" target="_blank" class="text-blue-500">Gitlab Repo</a>
                 </div>
             </div>
         </template>
@@ -64,4 +74,37 @@ const getText = (status) => {
             return "Không xác định"
     }
 }
+
+const getSeverityGitHub = (status) => {
+    switch (status) {
+        case 'queued':
+            return 'warn'
+        case 'in_progress':
+            return 'info'
+        case 'success':
+            return 'success'
+        case 'failure':
+            return 'danger'
+        default:
+            return "contrast"
+    }
+}
+
+const getTextGitHub = (status) => {
+    switch (status) {
+        case 'queued':
+            return 'Đang chờ'
+        case 'in_progress':
+            return 'Đang chạy...'
+        case 'success':
+            return 'Thành công'
+        case 'failure':
+            return 'Lỗi push'
+        default:
+            return "Không xác định"
+    }
+}
+
+
+
 </script>

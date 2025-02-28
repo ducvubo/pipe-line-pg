@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1 class="p-5 text-xl bg-green-600 font-bold text-white">PG Pipeline Dashboard</h1>
+    <h1 class="p-2 text-xl bg-green-600 font-bold text-white">PG Pipeline Dashboard</h1>
     <PipelineList />
   </div>
 </template>
@@ -15,6 +15,6 @@ import PipelineList from './components/PipelineList.vue';
   text-align: center;
   color: #2c3e50;
   background-color: aliceblue;
-  height: 100vh;
+  height: auto;
 }
 </style>

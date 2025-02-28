@@ -123,6 +123,38 @@ export const usePipelineStore = defineStore("pipeline", {
         linkGitlab: "https://gitlab.taphoaictu.id.vn/vuducbo/restaurant_pg",
         linkApp: "https://restaurant.pg.taphoaictu.id.vn",
       },
+      {
+        id: 8,
+        pipelineToken: "glptt-f15a5f80ef47bd935c70f98aa47142e66f253a5c",
+        name: "Admin PG",
+        pipelines: {
+          id: "",
+          status: "",
+        },
+        gitHubRepo: {
+          name: "admin-pg",
+          status: "",
+        },
+        linkGithub: "https://github.com/ducvubo/admin-pg",
+        linkGitlab: "https://gitlab.taphoaictu.id.vn/vuducbo/admin_pg",
+        linkApp: "https://admin.pg.taphoaictu.id.vn",
+      },
+      {
+        id: 9,
+        pipelineToken: "glptt-c636e05aa884faeb621576b266682e02a3e75f8f",
+        name: "User PG",
+        pipelines: {
+          id: "",
+          status: "",
+        },
+        gitHubRepo: {
+          name: "user-pg",
+          status: "",
+        },
+        linkGithub: "https://github.com/ducvubo/user-pg",
+        linkGitlab: "https://gitlab.taphoaictu.id.vn/vuducbo/user_pg",
+        linkApp: "https://pato.taphoaictu.id.vn",
+      },
     ],
   }),
 

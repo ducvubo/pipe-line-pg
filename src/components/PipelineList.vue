@@ -1,7 +1,18 @@
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-4 gap-4 p-4">
-    <PipelineCard v-for="project in projects" :key="project.id" :project="project"
-      @trigger="triggerPipeline(project.id, 'main', project.pipelineToken, project.gitHubRepo.name)" />
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-4 p-2">
+    <PipelineCard
+      v-for="project in projects"
+      :key="project.id"
+      :project="project"
+      @trigger="
+        triggerPipeline(
+          project.id,
+          'main',
+          project.pipelineToken,
+          project.gitHubRepo.name
+        )
+      "
+    />
   </div>
 </template>
 
@@ -24,14 +35,18 @@ onMounted(() => {
     store.fetchPipelineStatus(
       project.id,
       project.pipelines.id,
-      project.gitHubRepo.name,
+      project.gitHubRepo.name
     );
   });
 
   setInterval(() => {
     store.projects.forEach((project) => {
-      store.fetchPipelineStatus(project.id, project.pipelines.id, project.gitHubRepo.name);
+      store.fetchPipelineStatus(
+        project.id,
+        project.pipelines.id,
+        project.gitHubRepo.name
+      );
     });
-  }, 5000);
+  }, 3000);
 });
 </script>

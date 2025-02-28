@@ -138,7 +138,7 @@ const getTextGitHub = (status) => {
         <template #footer>
             <div class="flex gap-3 justify-center ">
                 <Button :disabled="project.pipelines.status === 'running' || project.pipelines.status === 'created'"
-                    :label="getText(project.pipelines.status)" severity="success" @click="triggerPipeline" />
+                    :label="project.pipelines.status === 'success' ? 'Deploy' : getText(project.pipelines.status)" severity="success" @click="triggerPipeline" />
                 <Button label="Show Log" severity="info" @click="showLogDialog = true" />
             </div>
         </template>

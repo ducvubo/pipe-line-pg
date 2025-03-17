@@ -11,7 +11,7 @@ export const usePipelineStore = defineStore("pipeline", {
     projects: [
       {
         id: 1,
-        pipelineToken: "glptt-1d03de5d9d16a9bd8eac27403028a54e3795df7c",
+        pipelineToken: "glptt-b4276fa2f1f6a95b0e3358d95cbb22a969d507ae",
         name: "Back PG",
         pipelines: {
           id: "",
@@ -26,8 +26,8 @@ export const usePipelineStore = defineStore("pipeline", {
         linkApp: "https://back.pg.taphoaictu.id.vn/swagger",
       },
       {
-        id: 2,
-        pipelineToken: "glptt-eff15efcbe31911eaa8197630f7786c627c298dd",
+        id: 4,
+        pipelineToken: "glptt-a5146554655f2547e09a6149d8c4c980958f0f8a",
         name: "Inventory PG",
         pipelines: {
           id: "",
@@ -42,8 +42,8 @@ export const usePipelineStore = defineStore("pipeline", {
         linkApp: "https://inventory.pg.taphoaictu.id.vn/swagger",
       },
       {
-        id: 3,
-        pipelineToken: "glptt-29ca0bf9c9463c91a3ef60e40bcb7bf94fd855c5",
+        id: 5,
+        pipelineToken: "glptt-218206359f25b219b65c6aa2f46a8c2f990a1c10",
         name: "Order PG",
         pipelines: {
           id: "",
@@ -58,8 +58,8 @@ export const usePipelineStore = defineStore("pipeline", {
         linkApp: "https://order.pg.taphoaictu.id.vn/swagger",
       },
       {
-        id: 4,
-        pipelineToken: "glptt-82e10d310a0e07a808b89006019b9a5ad860d48e",
+        id: 3,
+        pipelineToken: "glptt-cbb1e86b2a09ff6214598e4a3821b27368ea5cf8",
         name: "Employee PG",
         pipelines: {
           id: "",
@@ -74,8 +74,8 @@ export const usePipelineStore = defineStore("pipeline", {
         linkApp: "https://employee.pg.taphoaictu.id.vn",
       },
       {
-        id: 5,
-        pipelineToken: "glptt-c18a72821f23df673f64c082c3ca18de0bcd5fec",
+        id: 2,
+        pipelineToken: "glptt-70bb6617860bcb7b42a924f495606ec7308790d2",
         name: "Blog PG",
         pipelines: {
           id: "",
@@ -91,7 +91,7 @@ export const usePipelineStore = defineStore("pipeline", {
       },
       {
         id: 6,
-        pipelineToken: "glptt-32961bfc4730e0d20846cb66b27647b245dc05d6",
+        pipelineToken: "glptt-2aab54f7fa8d12613a1a78f3dd530654156346f6",
         name: "System Management PG",
         pipelines: {
           id: "",
@@ -108,8 +108,8 @@ export const usePipelineStore = defineStore("pipeline", {
           "https://system.management.pg.taphoaictu.id.vn/swagger/index.html",
       },
       {
-        id: 7,
-        pipelineToken: "glptt-564553d5bdee3c8e3b3f29c5553efff797bdca52",
+        id: 9,
+        pipelineToken: "glptt-fd2eba7b0d6bdb463fe888c5db8cc91477f97ba4",
         name: "Restaurant PG",
         pipelines: {
           id: "",
@@ -124,8 +124,8 @@ export const usePipelineStore = defineStore("pipeline", {
         linkApp: "https://restaurant.pg.taphoaictu.id.vn",
       },
       {
-        id: 8,
-        pipelineToken: "glptt-f15a5f80ef47bd935c70f98aa47142e66f253a5c",
+        id: 7,
+        pipelineToken: "glptt-c38f45fb7f744c52b151b004a7d972c98e8eb1a0",
         name: "Admin PG",
         pipelines: {
           id: "",
@@ -140,8 +140,8 @@ export const usePipelineStore = defineStore("pipeline", {
         linkApp: "https://admin.pg.taphoaictu.id.vn",
       },
       {
-        id: 9,
-        pipelineToken: "glptt-c636e05aa884faeb621576b266682e02a3e75f8f",
+        id: 8,
+        pipelineToken: "glptt-7243c65ef7bf68e0ff943383bbd8d3d381fb4ea5",
         name: "User PG",
         pipelines: {
           id: "",

@@ -9,7 +9,6 @@
           project.id,
           'main',
           project.pipelineToken,
-          project.gitHubRepo.name
         )
       "
     />
@@ -24,8 +23,8 @@ import PipelineCard from "./PipelineCard.vue";
 const store = usePipelineStore();
 const projects = store.projects;
 
-const triggerPipeline = (projectId, branch, pipelineToken, nameRepo) => {
-  store.triggerPipeline(projectId, branch, pipelineToken, nameRepo);
+const triggerPipeline = (projectId, branch, pipelineToken) => {
+  store.triggerPipeline(projectId, branch, pipelineToken);
 };
 
 onMounted(() => {

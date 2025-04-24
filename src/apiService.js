@@ -1,10 +1,9 @@
 import axios from "axios";
 
-const GITHUB_TOKEN = "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";
-export const gitlabToken = "glpat-m3yoLhroNkzNx1sQkcx1"; // Thay bằng token của bạn
+export const gitlabToken = "glpat-xuXPMSsqKN-t4Pzhf6x1"; // Thay bằng token của bạn
 export const baseURL = "https://gitlab.taphoaictu.id.vn/api/v4";
 const apiClient = axios.create({
-  baseURL: baseURL, 
+  baseURL: baseURL,
   headers: { Authorization: `Bearer ${gitlabToken}` },
 });
 
@@ -59,43 +58,4 @@ export const getPipelineStatus = async (projectId, pipelineId) => {
     return null;
   }
   return response.data[0];
-};
-
-export const getLatestGithubAction = async (nameRepo) => {
-  try {
-    const response = await axios.get(
-      `https://api.github.com/repos/ducvubo/${nameRepo}/actions/runs?per_page=1`,
-      {
-        headers: {
-          Authorization: `Bearer ${GITHUB_TOKEN}`,
-          Accept: "application/vnd.github.v3+json",
-        },
-      }
-    );
-
-    if (response.data.workflow_runs.length > 0) {
-      const latestRun = response.data.workflow_runs[0];
-      console.log({
-        id: latestRun.id,
-        status: latestRun.status,
-        created_at: latestRun.created_at,
-      });
-      let status = '';
-        if (latestRun.status === 'completed') {
-            status = latestRun.conclusion;
-        } else {
-            status = latestRun.status;
-        }
-      return status;
-    } else {
-      console.log("No workflow runs found.");
-      return null;
-    }
-  } catch (error) {
-    console.error(
-      "Error fetching GitHub Actions:",
-      error.response?.data || error.message
-    );
-    return null;
-  }
 };

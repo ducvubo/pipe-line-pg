@@ -35,7 +35,6 @@ onMounted(() => {
     store.fetchPipelineStatus(
       project.id,
       project.pipelines.id,
-      project.gitHubRepo.name
     );
   });
 
@@ -44,7 +43,6 @@ onMounted(() => {
       store.fetchPipelineStatus(
         project.id,
         project.pipelines.id,
-        project.gitHubRepo.name
       );
     });
   }, 3000);

@@ -3,7 +3,6 @@ import {
   activatePipeline,
   getPipelineStatus,
   generateTag,
-  getLatestGithubAction,
 } from "../apiService";
 
 export const usePipelineStore = defineStore("pipeline", {
@@ -11,14 +10,10 @@ export const usePipelineStore = defineStore("pipeline", {
     projects: [
       {
         id: 1,
-        pipelineToken: "glptt-b4276fa2f1f6a95b0e3358d95cbb22a969d507ae",
+        pipelineToken: "glpat-byNn6DQCuvdfz6UGxZuj",
         name: "Back PG",
         pipelines: {
           id: "",
-          status: "",
-        },
-        gitHubRepo: {
-          name: "bk-pg",
           status: "",
         },
         linkGithub: "https://github.com/ducvubo/bk-pg",
@@ -26,15 +21,11 @@ export const usePipelineStore = defineStore("pipeline", {
         linkApp: "https://back.pg.taphoaictu.id.vn/swagger",
       },
       {
-        id: 4,
+        id: 5,
         pipelineToken: "glptt-a5146554655f2547e09a6149d8c4c980958f0f8a",
         name: "Inventory PG",
         pipelines: {
           id: "",
-          status: "",
-        },
-        gitHubRepo: {
-          name: "inventory_pg",
           status: "",
         },
         linkGithub: "https://github.com/ducvubo/inventory_pg",
@@ -42,15 +33,11 @@ export const usePipelineStore = defineStore("pipeline", {
         linkApp: "https://inventory.pg.taphoaictu.id.vn/swagger",
       },
       {
-        id: 5,
+        id: 6,
         pipelineToken: "glptt-218206359f25b219b65c6aa2f46a8c2f990a1c10",
         name: "Order PG",
         pipelines: {
           id: "",
-          status: "",
-        },
-        gitHubRepo: {
-          name: "order-pg",
           status: "",
         },
         linkGithub: "https://github.com/ducvubo/order-pg",
@@ -58,15 +45,11 @@ export const usePipelineStore = defineStore("pipeline", {
         linkApp: "https://order.pg.taphoaictu.id.vn/swagger",
       },
       {
-        id: 3,
+        id: 4,
         pipelineToken: "glptt-cbb1e86b2a09ff6214598e4a3821b27368ea5cf8",
         name: "Employee PG",
         pipelines: {
           id: "",
-          status: "",
-        },
-        gitHubRepo: {
-          name: "employee-pg",
           status: "",
         },
         linkGithub: "https://github.com/ducvubo/employee-pg",
@@ -74,15 +57,11 @@ export const usePipelineStore = defineStore("pipeline", {
         linkApp: "https://employee.pg.taphoaictu.id.vn",
       },
       {
-        id: 2,
+        id: 3,
         pipelineToken: "glptt-70bb6617860bcb7b42a924f495606ec7308790d2",
         name: "Blog PG",
         pipelines: {
           id: "",
-          status: "",
-        },
-        gitHubRepo: {
-          name: "blog-pg",
           status: "",
         },
         linkGithub: "https://github.com/ducvubo/blog-pg",
@@ -90,15 +69,11 @@ export const usePipelineStore = defineStore("pipeline", {
         linkApp: "https://blog.pg.taphoaictu.id.vn/swagger",
       },
       {
-        id: 6,
+        id: 8,
         pipelineToken: "glptt-2aab54f7fa8d12613a1a78f3dd530654156346f6",
         name: "System Management PG",
         pipelines: {
           id: "",
-          status: "",
-        },
-        gitHubRepo: {
-          name: "system-management-pg",
           status: "",
         },
         linkGithub: "https://github.com/ducvubo/system-management-pg",
@@ -108,15 +83,11 @@ export const usePipelineStore = defineStore("pipeline", {
           "https://system.management.pg.taphoaictu.id.vn/swagger/index.html",
       },
       {
-        id: 9,
+        id: 7,
         pipelineToken: "glptt-fd2eba7b0d6bdb463fe888c5db8cc91477f97ba4",
         name: "Restaurant PG",
         pipelines: {
           id: "",
-          status: "",
-        },
-        gitHubRepo: {
-          name: "restaurant-pg",
           status: "",
         },
         linkGithub: "https://github.com/ducvubo/restaurant-pg",
@@ -124,15 +95,11 @@ export const usePipelineStore = defineStore("pipeline", {
         linkApp: "https://restaurant.pg.taphoaictu.id.vn",
       },
       {
-        id: 7,
+        id: 2,
         pipelineToken: "glptt-c38f45fb7f744c52b151b004a7d972c98e8eb1a0",
         name: "Admin PG",
         pipelines: {
           id: "",
-          status: "",
-        },
-        gitHubRepo: {
-          name: "admin-pg",
           status: "",
         },
         linkGithub: "https://github.com/ducvubo/admin-pg",
@@ -140,21 +107,29 @@ export const usePipelineStore = defineStore("pipeline", {
         linkApp: "https://admin.pg.taphoaictu.id.vn",
       },
       {
-        id: 8,
+        id: 9,
         pipelineToken: "glptt-7243c65ef7bf68e0ff943383bbd8d3d381fb4ea5",
         name: "User PG",
         pipelines: {
           id: "",
           status: "",
         },
-        gitHubRepo: {
-          name: "user-pg",
-          status: "",
-        },
         linkGithub: "https://github.com/ducvubo/user-pg",
         linkGitlab: "https://gitlab.taphoaictu.id.vn/vuducbo/user_pg",
         linkApp: "https://pato.taphoaictu.id.vn",
       },
+      {
+        id: 10,
+        name: "Rooms PG",
+        pipelines: {
+          id: "",
+          status: "",
+        },
+
+        linkGithub: "https://github.com/ducvubo/rooms-pg",
+        linkGitlab: "https://gitlab.taphoaictu.id.vn/vuducbo/rooms_pg",
+        linkApp: "https://rooms.pg.taphoaictu.id.vn",
+      }
     ],
   }),
 
@@ -167,12 +142,10 @@ export const usePipelineStore = defineStore("pipeline", {
 
     async fetchPipelineStatus(projectId, pipelineId, nameRepo) {
       const status = await getPipelineStatus(projectId, pipelineId);
-      const statusGithub = await getLatestGithubAction(nameRepo);
       this.updatePipelineStatus(
         projectId,
         status.id,
         status.status,
-        statusGithub,
         nameRepo
       );
     },
@@ -186,14 +159,11 @@ export const usePipelineStore = defineStore("pipeline", {
       projectId,
       pipelineId,
       status,
-      statusGitHub = "test",
       nameRepo
     ) {
       const project = this.projects.find((p) => p.id === projectId);
       project.pipelines.id = pipelineId;
       project.pipelines.status = status;
-      project.gitHubRepo.status = statusGitHub;
-      project.gitHubRepo.name = nameRepo;
     },
   },
 });

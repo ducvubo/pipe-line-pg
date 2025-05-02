@@ -11,7 +11,7 @@ export const usePipelineStore = defineStore("pipeline", {
       {
         id: 1,
         pipelineToken: "glpat-byNn6DQCuvdfz6UGxZuj",
-        name: "Back PG",
+        name: "Dish Service",
         pipelines: {
           id: "",
           status: "",
@@ -23,7 +23,7 @@ export const usePipelineStore = defineStore("pipeline", {
       {
         id: 5,
         pipelineToken: "glptt-a5146554655f2547e09a6149d8c4c980958f0f8a",
-        name: "Inventory PG",
+        name: "Inventory Service",
         pipelines: {
           id: "",
           status: "",
@@ -35,7 +35,7 @@ export const usePipelineStore = defineStore("pipeline", {
       {
         id: 6,
         pipelineToken: "glptt-218206359f25b219b65c6aa2f46a8c2f990a1c10",
-        name: "Order PG",
+        name: "Order Service",
         pipelines: {
           id: "",
           status: "",
@@ -47,7 +47,7 @@ export const usePipelineStore = defineStore("pipeline", {
       {
         id: 4,
         pipelineToken: "glptt-cbb1e86b2a09ff6214598e4a3821b27368ea5cf8",
-        name: "Employee PG",
+        name: "Employee Service",
         pipelines: {
           id: "",
           status: "",
@@ -59,7 +59,7 @@ export const usePipelineStore = defineStore("pipeline", {
       {
         id: 3,
         pipelineToken: "glptt-70bb6617860bcb7b42a924f495606ec7308790d2",
-        name: "Blog PG",
+        name: "Blog Service",
         pipelines: {
           id: "",
           status: "",
@@ -71,7 +71,7 @@ export const usePipelineStore = defineStore("pipeline", {
       {
         id: 8,
         pipelineToken: "glptt-2aab54f7fa8d12613a1a78f3dd530654156346f6",
-        name: "System Management PG",
+        name: "Internal Service",
         pipelines: {
           id: "",
           status: "",
@@ -85,7 +85,7 @@ export const usePipelineStore = defineStore("pipeline", {
       {
         id: 7,
         pipelineToken: "glptt-fd2eba7b0d6bdb463fe888c5db8cc91477f97ba4",
-        name: "Restaurant PG",
+        name: "Restaurant Service",
         pipelines: {
           id: "",
           status: "",
@@ -94,22 +94,22 @@ export const usePipelineStore = defineStore("pipeline", {
         linkGitlab: "https://gitlab.taphoaictu.id.vn/vuducbo/restaurant_pg",
         linkApp: "https://restaurant.pg.taphoaictu.id.vn",
       },
-      {
-        id: 2,
-        pipelineToken: "glptt-c38f45fb7f744c52b151b004a7d972c98e8eb1a0",
-        name: "Admin PG",
-        pipelines: {
-          id: "",
-          status: "",
-        },
-        linkGithub: "https://github.com/ducvubo/admin-pg",
-        linkGitlab: "https://gitlab.taphoaictu.id.vn/vuducbo/admin_pg",
-        linkApp: "https://admin.pg.taphoaictu.id.vn",
-      },
+      // {
+      //   id: 2,
+      //   pipelineToken: "glptt-c38f45fb7f744c52b151b004a7d972c98e8eb1a0",
+      //   name: "Admin",
+      //   pipelines: {
+      //     id: "",
+      //     status: "",
+      //   },
+      //   linkGithub: "https://github.com/ducvubo/admin-pg",
+      //   linkGitlab: "https://gitlab.taphoaictu.id.vn/vuducbo/admin_pg",
+      //   linkApp: "https://admin.pg.taphoaictu.id.vn",
+      // },
       {
         id: 9,
         pipelineToken: "glptt-7243c65ef7bf68e0ff943383bbd8d3d381fb4ea5",
-        name: "User PG",
+        name: "Pato Service",
         pipelines: {
           id: "",
           status: "",
@@ -120,7 +120,7 @@ export const usePipelineStore = defineStore("pipeline", {
       },
       {
         id: 10,
-        name: "Rooms PG",
+        name: "Room Service",
         pipelines: {
           id: "",
           status: "",

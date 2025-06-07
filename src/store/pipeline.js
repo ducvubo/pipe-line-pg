@@ -17,11 +17,11 @@ export const usePipelineStore = defineStore("pipeline", {
           status: "",
         },
         linkGithub: "https://github.com/ducvubo/bk-pg",
-        linkGitlab: "https://gitlab.taphoaictu.id.vn/vuducbo/back_pg",
+        linkGitlab: "http://gitlab.taphoaictu.id.vn:8929/vuducbo/back_pg",
         linkApp: "https://back.pg.taphoaictu.id.vn/swagger",
       },
       {
-        id: 5,
+        id: 4,
         pipelineToken: "glptt-a5146554655f2547e09a6149d8c4c980958f0f8a",
         name: "Inventory Service",
         pipelines: {
@@ -29,11 +29,11 @@ export const usePipelineStore = defineStore("pipeline", {
           status: "",
         },
         linkGithub: "https://github.com/ducvubo/inventory_pg",
-        linkGitlab: "https://gitlab.taphoaictu.id.vn/vuducbo/inventory_pg",
+        linkGitlab: "http://gitlab.taphoaictu.id.vn:8929/vuducbo/inventory_pg",
         linkApp: "https://inventory.pg.taphoaictu.id.vn/swagger",
       },
       {
-        id: 6,
+        id: 5,
         pipelineToken: "glptt-218206359f25b219b65c6aa2f46a8c2f990a1c10",
         name: "Order Service",
         pipelines: {
@@ -41,11 +41,11 @@ export const usePipelineStore = defineStore("pipeline", {
           status: "",
         },
         linkGithub: "https://github.com/ducvubo/order-pg",
-        linkGitlab: "https://gitlab.taphoaictu.id.vn/vuducbo/order_pg",
+        linkGitlab: "http://gitlab.taphoaictu.id.vn:8929/vuducbo/order_pg",
         linkApp: "https://order.pg.taphoaictu.id.vn/swagger",
       },
       {
-        id: 4,
+        id: 3,
         pipelineToken: "glptt-cbb1e86b2a09ff6214598e4a3821b27368ea5cf8",
         name: "Employee Service",
         pipelines: {
@@ -53,11 +53,11 @@ export const usePipelineStore = defineStore("pipeline", {
           status: "",
         },
         linkGithub: "https://github.com/ducvubo/employee-pg",
-        linkGitlab: "https://gitlab.taphoaictu.id.vn/vuducbo/employee_pg",
+        linkGitlab: "http://gitlab.taphoaictu.id.vn:8929/vuducbo/employee_pg",
         linkApp: "https://employee.pg.taphoaictu.id.vn",
       },
       {
-        id: 3,
+        id: 2,
         pipelineToken: "glptt-70bb6617860bcb7b42a924f495606ec7308790d2",
         name: "Blog Service",
         pipelines: {
@@ -65,11 +65,11 @@ export const usePipelineStore = defineStore("pipeline", {
           status: "",
         },
         linkGithub: "https://github.com/ducvubo/blog-pg",
-        linkGitlab: "https://gitlab.taphoaictu.id.vn/vuducbo/blog_pg",
+        linkGitlab: "http://gitlab.taphoaictu.id.vn:8929/vuducbo/blog_pg",
         linkApp: "https://blog.pg.taphoaictu.id.vn/swagger",
       },
       {
-        id: 8,
+        id: 7,
         pipelineToken: "glptt-2aab54f7fa8d12613a1a78f3dd530654156346f6",
         name: "Internal Service",
         pipelines: {
@@ -78,12 +78,12 @@ export const usePipelineStore = defineStore("pipeline", {
         },
         linkGithub: "https://github.com/ducvubo/system-management-pg",
         linkGitlab:
-          "https://gitlab.taphoaictu.id.vn/vuducbo/system_management_pg",
+          "http://gitlab.taphoaictu.id.vn:8929/vuducbo/system_management_pg",
         linkApp:
           "https://system.management.pg.taphoaictu.id.vn/swagger/index.html",
       },
       {
-        id: 7,
+        id: 6,
         pipelineToken: "glptt-fd2eba7b0d6bdb463fe888c5db8cc91477f97ba4",
         name: "Restaurant Service",
         pipelines: {
@@ -91,23 +91,11 @@ export const usePipelineStore = defineStore("pipeline", {
           status: "",
         },
         linkGithub: "https://github.com/ducvubo/restaurant-pg",
-        linkGitlab: "https://gitlab.taphoaictu.id.vn/vuducbo/restaurant_pg",
+        linkGitlab: "http://gitlab.taphoaictu.id.vn:8929/vuducbo/restaurant_pg",
         linkApp: "https://restaurant.pg.taphoaictu.id.vn",
       },
-      // {
-      //   id: 2,
-      //   pipelineToken: "glptt-c38f45fb7f744c52b151b004a7d972c98e8eb1a0",
-      //   name: "Admin",
-      //   pipelines: {
-      //     id: "",
-      //     status: "",
-      //   },
-      //   linkGithub: "https://github.com/ducvubo/admin-pg",
-      //   linkGitlab: "https://gitlab.taphoaictu.id.vn/vuducbo/admin_pg",
-      //   linkApp: "https://admin.pg.taphoaictu.id.vn",
-      // },
       {
-        id: 9,
+        id: 8,
         pipelineToken: "glptt-7243c65ef7bf68e0ff943383bbd8d3d381fb4ea5",
         name: "Pato Service",
         pipelines: {
@@ -115,11 +103,11 @@ export const usePipelineStore = defineStore("pipeline", {
           status: "",
         },
         linkGithub: "https://github.com/ducvubo/user-pg",
-        linkGitlab: "https://gitlab.taphoaictu.id.vn/vuducbo/user_pg",
+        linkGitlab: "http://gitlab.taphoaictu.id.vn:8929/vuducbo/user_pg",
         linkApp: "https://pato.taphoaictu.id.vn",
       },
       {
-        id: 10,
+        id: 9,
         name: "Room Service",
         pipelines: {
           id: "",
@@ -127,7 +115,7 @@ export const usePipelineStore = defineStore("pipeline", {
         },
 
         linkGithub: "https://github.com/ducvubo/rooms-pg",
-        linkGitlab: "https://gitlab.taphoaictu.id.vn/vuducbo/rooms_pg",
+        linkGitlab: "http://gitlab.taphoaictu.id.vn:8929/vuducbo/rooms_pg",
         linkApp: "https://rooms.pg.taphoaictu.id.vn",
       }
     ],

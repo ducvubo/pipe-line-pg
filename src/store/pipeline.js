@@ -115,7 +115,7 @@ export const usePipelineStore = defineStore("pipeline", {
         },
 
         linkGithub: "https://github.com/ducvubo/rooms-pg",
-        linkGitlab: "https://gitlab.taphoaictu.id.vn/vuducbo/rooms_pg",
+        linkGitlab: "https://gitlab.taphoaictu.id.vn/vuducbo/room_pg",
         linkApp: "https://rooms.pg.taphoaictu.id.vn/swagger",
       }
     ],
